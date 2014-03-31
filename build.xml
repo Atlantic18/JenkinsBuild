@@ -113,8 +113,7 @@
 
  <target name="phpunit" description="Run unit tests with PHPUnit">
   <exec executable="phpunit" failonerror="true">
-    <arg value="-c"/>
-    <arg value="app"/>
+    <arg value="bundle"/>
     <arg value="--coverage-clover"/>
     <arg value="${basedir}/build/logs/clover.xml"/>
     <arg value="--log-junit"/>
