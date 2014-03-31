@@ -113,11 +113,11 @@
 
  <target name="phpunit" description="Run unit tests with PHPUnit">
   <exec executable="phpunit" failonerror="true">
-    <arg value="bundle"/>
     <arg value="--coverage-clover"/>
     <arg value="${basedir}/build/logs/clover.xml"/>
     <arg value="--log-junit"/>
     <arg value="${basedir}/build/logs/junit.xml"/>
+    <arg value="bundle"/>
   </exec>
  </target>
 </project>
